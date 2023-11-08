@@ -1,1 +1,23 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/><title>Audio Creator</title><script defer="defer" src="index.f5754ea91520ec778356.js"></script></head><body><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<script>
+  var target = '/build/index.html'
+
+  const params = new URLSearchParams(window.location.search)
+
+  if (params.get('target')) target = params.get('target')
+
+  window.location.href = window.location.href + '/build/index.html'
+</script>
+
+<body>
+
+</body>
+
+</html>
