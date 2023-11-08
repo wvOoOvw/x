@@ -7,13 +7,17 @@
   <title></title>
 </head>
 <script>
-  var target = '/build/index.html'
+  var target = 'build'
 
   const params = new URLSearchParams(window.location.search)
 
   if (params.get('target')) target = params.get('target')
 
-  window.location.href = window.location.href + '/build/index.html'
+  var href = window.location.href
+
+  href = href.replace('/index.html', '')
+
+  window.location.href = window.location.href + '/' + target
 </script>
 
 <body>
