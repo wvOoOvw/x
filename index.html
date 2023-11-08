@@ -17,7 +17,9 @@
 
   href = href.replace('/index.html', '')
 
-  window.location.href = window.location.href + '/' + target
+  href = href.replace(/\/$/, '')
+
+  window.location.href = href + '/' + target
 </script>
 
 <body>
